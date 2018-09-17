@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jp.regform_app.RegForm_App">
+
+    <TextView
+        android:layout_width="125sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/uptxtname"
+        android:text="Name:-"
+        android:textSize="25sp"/>
+    <EditText
+        android:layout_width="225sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/upedtname"
+        android:textSize="20sp"
+        android:hint="Enter Name"
+        android:layout_alignTop="@+id/uptxtname"
+        android:layout_toRightOf="@+id/uptxtname"
+        android:layout_toEndOf="@+id/uptxtname" />
+
+    <TextView
+        android:layout_width="125sp"
+        android:layout_height="wrap_content"
+        android:text="Address:-"
+        android:textSize="25sp"
+        android:id="@+id/uptxtaddress"
+        android:layout_below="@+id/upedtname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+    <EditText
+        android:layout_width="225sp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Enter Address"
+        android:layout_alignTop="@+id/uptxtaddress"
+        android:layout_toRightOf="@+id/uptxtaddress"
+        android:layout_toEndOf="@+id/uptxtaddress"
+        android:id="@+id/upedtaddress" />
+    <TextView
+        android:layout_width="125sp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Mobile:-"
+        android:id="@+id/uptxtmobile"
+        android:layout_below="@+id/upedtaddress"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" />
+    <EditText
+        android:layout_width="225sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/upedtmobile"
+        android:hint="Enter Mobile No"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/uptxtmobile"
+        android:layout_toRightOf="@+id/uptxtmobile"
+        android:layout_toEndOf="@+id/uptxtmobile" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Update"
+        android:id="@+id/update"
+        android:textSize="20sp"
+
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/upedtmobile"
+        android:layout_marginBottom="133dp" />
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/upimage"
+        android:src="#e94242"
+        android:layout_alignTop="@+id/upbtnimg"
+        android:layout_centerHorizontal="true" />
+
+   <Button
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Take Image"
+       android:id="@+id/upbtnimg"
+       android:layout_centerVertical="true"
+       android:layout_alignParentStart="true" />
+
+
+</RelativeLayout>

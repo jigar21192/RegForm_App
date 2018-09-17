@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.jp.regform_app.RegForm_App">
+    <TextView
+        android:layout_width="125sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtname"
+        android:text="Name:-"
+        android:textSize="25sp"/>
+    <EditText
+        android:layout_width="225sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtname"
+        android:textSize="20sp"
+        android:hint="Enter Name"
+        android:layout_alignTop="@+id/txtname"
+        android:layout_toRightOf="@+id/txtname"
+        android:layout_toEndOf="@+id/txtname" />
+
+    <TextView
+        android:layout_width="125sp"
+        android:layout_height="wrap_content"
+        android:text="Address:-"
+        android:textSize="25sp"
+        android:id="@+id/txtaddress"
+        android:layout_below="@+id/edtname"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+    <EditText
+        android:layout_width="225sp"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:hint="Enter Address"
+        android:layout_alignTop="@+id/txtaddress"
+        android:layout_toRightOf="@+id/txtaddress"
+        android:layout_toEndOf="@+id/txtaddress"
+        android:id="@+id/edtaddress" />
+    <TextView
+        android:layout_width="125sp"
+        android:layout_height="wrap_content"
+        android:textSize="25sp"
+        android:text="Mobile:-"
+        android:id="@+id/txtmobile"
+        android:layout_below="@+id/edtaddress"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="46dp" />
+    <EditText
+        android:layout_width="225sp"
+        android:layout_height="wrap_content"
+        android:id="@+id/edtmobile"
+        android:hint="Enter Mobile No"
+        android:inputType="phone"
+        android:maxLength="10"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/txtmobile"
+        android:layout_toRightOf="@+id/txtmobile"
+        android:layout_toEndOf="@+id/txtmobile" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/btnsubmit"
+        android:textSize="20sp"
+        android:layout_alignTop="@+id/btnalldata"
+        android:layout_alignRight="@+id/txtmobile"
+        android:layout_alignEnd="@+id/txtmobile" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All Data"
+        android:textSize="20sp"
+        android:id="@+id/btnalldata"
+        android:layout_below="@+id/edtmobile"
+        android:layout_alignRight="@+id/edtmobile"
+        android:layout_alignEnd="@+id/edtmobile"
+        android:layout_marginTop="115dp" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtimage"
+        android:text="Image"
+        android:textSize="25sp"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/iv"
+        android:layout_alignBottom="@+id/iv" />
+    <ImageView
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:id="@+id/iv"
+
+        android:layout_above="@+id/btnsubmit"
+        android:layout_centerHorizontal="true"
+        android:src="#e93b3b" />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Take Image"
+        android:id="@+id/btnimage"
+        android:layout_below="@+id/btnsubmit"
+        android:layout_alignStart="@+id/btnsubmit"
+        android:layout_marginTop="42dp" />
+
+</RelativeLayout>
